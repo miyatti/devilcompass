@@ -1,0 +1,604 @@
+/* line 1, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* line 9, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 15, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 18, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 22, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 29, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 34, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 38, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 44, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 52, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 63, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+@charset "UTF-8";
+/* line 23, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+.clear {
+  clear: both;
+}
+
+/* line 24, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body {
+  font-size: 13px;
+  line-height: 24px;
+  -webkit-font-smoothing: antialiased;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-weight: normal;
+  width: 640px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px;
+  background: #23262B;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  /* line 24, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body {
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 24, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body {
+    width: 320px;
+  }
+}
+/* line 44, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #top_bg {
+  background-image: url(/assets/bg_1_big-942c72327c4e2fbb69400fb70ee0a5dc937fc6d2a81ee4a29791d8f7549e15ec.png);
+  background-repeat: no-repeat;
+  width: 480px;
+  background-position: 63px 0px;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  height: 486px;
+  position: relative;
+  padding-top: 58px;
+}
+@media screen and (max-width: 640px) {
+  /* line 44, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #top_bg {
+    width: 320px;
+    background-image: url(/assets/bg_1-c1fbfc047fcafd1c75f765cf0b955f5da673b1898be71f1feeaffaae94f43440.png);
+    background-position: 0px 0px;
+  }
+}
+/* line 60, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #top_bg #top_title {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 65, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #top_bg #top_watch {
+  margin-top: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/* line 71, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #top_bg #top_btn {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/* line 77, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #top_bg #top_ornament {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 82, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #top_bg #top_about {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  color: #FAFAFA;
+  border: solid 1px white;
+  font-size: 1.0em;
+  border-radius: 1em;
+}
+@media screen and (max-width: 640px) {
+  /* line 82, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #top_bg #top_about {
+    width: 229px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 82, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #top_bg #top_about {
+    font-size: 0.8em;
+  }
+}
+/* line 97, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #top_bg #top_about #top_about_title {
+  padding: 10px 3px 10px 3px;
+  border-bottom: solid 1px white;
+}
+/* line 101, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #top_bg #top_about #top_about_contents {
+  text-align: left;
+  padding: 17px;
+}
+/* line 108, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #top_bg2 {
+  position: absolute;
+  width: 480px;
+  height: 700px;
+  top: 471px;
+}
+@media screen and (max-width: 640px) {
+  /* line 108, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #top_bg2 {
+    background-image: url(/assets/bg_2-51b549d66e2de1922ce3689b90f3afa00c05a91341abd3b3985fe6b7b81cb345.png);
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 108, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #top_bg2 {
+    width: 320px;
+  }
+}
+/* line 120, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #q_notice {
+  width: 50%;
+  text-align: left;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 640px) {
+  /* line 120, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #q_notice {
+    width: 229px;
+  }
+}
+/* line 131, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question {
+  display: block;
+  position: relative;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 640px) {
+  /* line 131, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body .q_question {
+    width: 270px;
+  }
+}
+/* line 141, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_title {
+  margin-top: 20px;
+  border: solid 1px white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  padding: 5px 3px 2px 3px;
+  border: solid 1px white;
+  font-size: 0.8em;
+}
+/* line 150, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_contents {
+  text-align: left;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  font-size: 1.2em;
+}
+@media screen and (max-width: 640px) {
+  /* line 150, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body .q_question .q_question_contents {
+    padding-top: 17px;
+    padding-bottom: 37px;
+    font-size: 1.0em;
+  }
+}
+/* line 161, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate {
+  display: block;
+  height: 30px;
+  width: 350px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 640px) {
+  /* line 161, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body .q_question .q_question_rate {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+/* line 173, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate input {
+  display: none;
+}
+/* line 176, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate input[type="radio"]:checked + label {
+  background-color: transparent;
+  border: solid 1px white;
+  padding-top: 3px;
+  width: 32px;
+  height: 27px;
+}
+@media screen and (max-width: 640px) {
+  /* line 176, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body .q_question .q_question_rate input[type="radio"]:checked + label {
+    padding-top: 4px;
+    width: 28px;
+    height: 22px;
+  }
+}
+/* line 188, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate label {
+  cursor: pointer;
+  border-radius: 15em;
+  text-align: center;
+  padding-top: 4px;
+  margin-right: 13px;
+  width: 34px;
+  height: 28px;
+  font-size: 1.0em;
+  float: left;
+}
+@media screen and (max-width: 640px) {
+  /* line 188, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body .q_question .q_question_rate label {
+    padding-top: 5px;
+    margin-right: 8px;
+    border-radius: 2em;
+    width: 30px;
+    height: 24px;
+    font-size: 1.0em;
+  }
+}
+/* line 207, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate .m3 {
+  background-color: #0067DF;
+}
+/* line 210, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate .m2 {
+  background-color: #3D74B3;
+}
+/* line 213, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate .m1 {
+  background-color: #677E99;
+}
+/* line 216, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate .p0 {
+  background-color: #808080;
+}
+/* line 219, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate .p1 {
+  background-color: #99676C;
+}
+/* line 222, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate .p2 {
+  background-color: #B33D4A;
+}
+/* line 225, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_rate .p3 {
+  background-color: #D0021B;
+}
+/* line 231, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_note1 {
+  font-size: 0.8em;
+  text-align: left;
+  float: left;
+}
+/* line 236, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body .q_question .q_question_note2 {
+  font-size: 0.8em;
+  text-align: right;
+  float: right;
+}
+/* line 243, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result1 {
+  margin-bottom: 50px;
+}
+/* line 246, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result1 #r_result1_title #r_result1_title1 {
+  font-size: 1.1em;
+}
+/* line 249, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result1 #r_result1_title #r_result1_title2 {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 640px) {
+  /* line 249, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #r_result1 #r_result1_title #r_result1_title2 {
+    font-size: 1.5em;
+  }
+}
+/* line 256, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result1 #r_result1_title #r_result1_title3 {
+  font-size: 1.0em;
+  margin-top: 3px;
+}
+/* line 262, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result1 #r_result1_subtitle #r_result1_subtitle1 {
+  font-size: 1.1em;
+}
+/* line 265, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result1 #r_result1_subtitle #r_result1_subtitle2 {
+  font-size: 2.5em;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 640px) {
+  /* line 265, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #r_result1 #r_result1_subtitle #r_result1_subtitle2 {
+    font-size: 1.5em;
+  }
+}
+/* line 272, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result1 #r_result1_subtitle #r_result1_subtitle3 {
+  font-size: 1.0em;
+  margin-top: 3px;
+}
+/* line 278, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 640px) {
+  /* line 278, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #r_result2 {
+    width: 229px;
+  }
+}
+/* line 286, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 #r_result2_title {
+  border: solid 1px white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  padding: 5px 3px 2px 3px;
+  border: solid 1px white;
+  font-size: 0.8em;
+}
+/* line 294, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents {
+  text-align: left;
+  margin-bottom: 30px;
+}
+/* line 297, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents .r_result2_contents_title {
+  font-size: 1.5em;
+  text-align: center;
+}
+@media screen and (max-width: 640px) {
+  /* line 297, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #r_result2 .r_result2_contents .r_result2_contents_title {
+    font-size: 1.3em;
+  }
+}
+/* line 304, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents .r_result2_contents_contents {
+  font-size: 1.2em;
+}
+@media screen and (max-width: 640px) {
+  /* line 304, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #r_result2 .r_result2_contents .r_result2_contents_contents {
+    font-size: 0.8em;
+  }
+}
+/* line 310, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents .rc_noteY {
+  font-size: 0.8em;
+  text-align: left;
+  float: left;
+}
+/* line 315, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents .rc_noteX {
+  font-size: 0.8em;
+  text-align: right;
+  float: right;
+}
+/* line 320, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents .rc_chartY {
+  width: 50%;
+  box-sizing: border-box;
+  height: 19px;
+  border: solid 1px white;
+  border-right: none;
+  padding-top: 2px;
+  text-align: left;
+  float: left;
+}
+@media screen and (max-width: 640px) {
+  /* line 320, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #r_result2 .r_result2_contents .rc_chartY {
+    height: 19px;
+  }
+}
+/* line 332, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents .rc_chartY .rc_chartY_unit {
+  background-color: #0067DF;
+  width: 4%;
+  height: 13px;
+  float: right;
+  margin-left: 1px;
+}
+@media screen and (max-width: 640px) {
+  /* line 332, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #r_result2 .r_result2_contents .rc_chartY .rc_chartY_unit {
+    height: 13px;
+  }
+}
+/* line 343, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents .rc_chartX {
+  width: 50%;
+  box-sizing: border-box;
+  height: 19px;
+  border: solid 1px white;
+  border-left: none;
+  padding-top: 2px;
+  text-align: right;
+  float: right;
+}
+@media screen and (max-width: 640px) {
+  /* line 343, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #r_result2 .r_result2_contents .rc_chartX {
+    height: 19px;
+  }
+}
+/* line 355, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents .rc_chartX .rc_chartX_unit {
+  background-color: #D0021B;
+  width: 4%;
+  height: 13px;
+  float: left;
+  margin-right: 1px;
+}
+@media screen and (max-width: 640px) {
+  /* line 355, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #r_result2 .r_result2_contents .rc_chartX .rc_chartX_unit {
+    height: 13px;
+  }
+}
+/* line 367, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents .rc_numY {
+  color: #0067DF;
+  font-size: 1.8em;
+  margin-top: 8px;
+  text-align: left;
+  float: left;
+}
+/* line 374, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result2 .r_result2_contents .rc_numX {
+  color: #D0021B;
+  font-size: 1.8em;
+  margin-top: 8px;
+  text-align: right;
+  float: right;
+}
+/* line 383, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result3 {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 640px) {
+  /* line 383, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+  body #r_result3 {
+    width: 229px;
+  }
+}
+/* line 391, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result3 #r_result3_title {
+  border: solid 1px white;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  padding: 5px 3px 2px 3px;
+  border: solid 1px white;
+  font-size: 0.8em;
+}
+/* line 399, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result3 .r_result3_subtitle {
+  margin-bottom: 30px;
+}
+/* line 401, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result3 .r_result3_subtitle .r_result3_subtitle1 {
+  font-size: 1.1em;
+}
+/* line 404, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result3 .r_result3_subtitle .r_result3_subtitle2 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}
+/* line 409, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result3 .r_result3_contents {
+  text-align: left;
+}
+/* line 411, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result3 .r_result3_contents .r_result3_contents_contents {
+  font-size: 0.8em;
+}
+/* line 418, /Users/miyatti/Documents/Projects/shindan/app/assets/stylesheets/users.scss */
+body #r_result4_btn {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
