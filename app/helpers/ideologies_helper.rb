@@ -1,0 +1,2 @@
+module IdeologiesHelper
+end

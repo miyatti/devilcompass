@@ -1,0 +1,33 @@
+<%= form_for(@temper) do |f| %>
+  <% if @temper.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@temper.errors.count, "error") %> prohibited this temper from being saved:</h2>
+
+      <ul>
+      <% @temper.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :PV %><br>
+    <%= f.number_field :PV %>
+  </div>
+  <div class="field">
+    <%= f.label :OP %><br>
+    <%= f.number_field :OP %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_area :note %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

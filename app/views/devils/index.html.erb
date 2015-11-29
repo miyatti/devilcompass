@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Devils</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Lc</th>
+      <th>Ld</th>
+      <th>Pv</th>
+      <th>Op</th>
+      <th>Note</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @devils.each do |devil| %>
+      <tr>
+        <td><%= devil.name %></td>
+        <td><%= devil.LC %></td>
+        <td><%= devil.LD %></td>
+        <td><%= devil.PV %></td>
+        <td><%= devil.OP %></td>
+        <td><%= devil.note %></td>
+        <td><%= link_to 'Show', devil %></td>
+        <td><%= link_to 'Edit', edit_devil_path(devil) %></td>
+        <td><%= link_to 'Destroy', devil, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Devil', new_devil_path %>

@@ -1,0 +1,30 @@
+<div class="rc_noteY">Y:<%= y %></div>
+<div class="rc_noteX">X:<%= x %></div>
+<div class="clear"></div>
+<div class="rc_chartY">
+<% num=(20*v/3).round(0) %>
+<% if num< 0 %>
+<% num.abs.times do |i| %>
+ <div class="rc_chartY_unit"></div>
+<% end  %>
+<% end %>
+</div>
+<div class="rc_chartX">
+<% if num>= 0 %>
+<% num.abs.times do |i| %>
+ <div class="rc_chartX_unit"></div>
+<% end  %>
+<% end %>
+</div>
+<% if num<0 %>
+<div class="rc_numY">
+<%= v.abs %>
+</div>
+<% end %>
+<% if num>=0 %>
+<div class="rc_numX">
+<%= v.abs %>
+</div>
+<% end %>
+
+<div class="clear"></div>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  LC: 1
+  LD: 1
+  note: MyText
+
+two:
+  LC: 1
+  LD: 1
+  note: MyText

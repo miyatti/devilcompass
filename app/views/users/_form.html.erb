@@ -1,0 +1,40 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+ <% @user.answers.each_with_index do |answer,i| %>
+    <%= f.fields_for :answers,answer do |a_f| %>
+    <div class="q_question">
+      <div class ="q_question_title">問 <%=(i+1)%></div>
+      <div class ="q_question_contents">
+       <%= @questions.all[i].name %>
+       <%= a_f.hidden_field :question_id, :value => @questions.all[i].id %>
+      <div class ="q_question_rate">
+       <%= a_f.radio_button :value, -3 %><%= a_f.label :value, :value =>'-3',:class =>'m3' %>
+       <%= a_f.radio_button :value, -2 %><%= a_f.label :value, :value =>'-2',:class =>'m2' %>
+       <%= a_f.radio_button :value, -1 %><%= a_f.label :value, :value =>'-1',:class =>'m1' %>
+       <%= a_f.radio_button :value, 0,{:checked => true} %><%= a_f.label :value, :value =>'0',:class =>'p0' %>
+       <%= a_f.radio_button :value, 1 %><%= a_f.label :value, :value =>'1',:class =>'p1' %>
+       <%= a_f.radio_button :value, 2 %><%= a_f.label :value, :value =>'2',:class =>'p2' %>
+       <%= a_f.radio_button :value, 3 %><%= a_f.label :value, :value =>'3',:class =>'p3' %>
+      </div>
+      <div class ="clear"></div>
+      <div class ="q_question_note1">同意しない</div>
+      <div class ="q_question_note2">同意する</div>
+    </div>
+   </div>
+    <% end %>
+  <% end %>
+   <div class="actions">
+    <%= f.submit "",:type => :image, :src => asset_path("btn_result@2x.png"), :width =>229  %>
+  </div>
+<% end %>

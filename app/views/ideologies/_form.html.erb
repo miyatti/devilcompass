@@ -1,0 +1,58 @@
+<%= form_for(@ideology) do |f| %>
+  <% if @ideology.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ideology.errors.count, "error") %> prohibited this ideology from being saved:</h2>
+
+      <ul>
+      <% @ideology.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :A %><br>
+    <%= f.number_field :A %>
+  </div>
+  <div class="field">
+    <%= f.label :B %><br>
+    <%= f.number_field :B %>
+  </div>
+  <div class="field">
+    <%= f.label :C %><br>
+    <%= f.number_field :C %>
+  </div>
+  <div class="field">
+    <%= f.label :D %><br>
+    <%= f.number_field :D %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_area :note %>
+  </div>
+  <div class="field">
+    <%= f.label :NoteA %><br>
+    <%= f.text_area :NoteA %>
+  </div>
+  <div class="field">
+    <%= f.label :NoteB %><br>
+    <%= f.text_area :NoteB %>
+  </div>
+  <div class="field">
+    <%= f.label :NoteC %><br>
+    <%= f.text_area :NoteC %>
+  </div>
+  <div class="field">
+    <%= f.label :NoteD %><br>
+    <%= f.text_area :NoteD %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

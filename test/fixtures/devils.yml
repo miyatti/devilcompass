@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  LC: 1
+  LD: 1
+  PV: 1
+  OP: 1
+  note: MyText
+
+two:
+  name: MyString
+  LC: 1
+  LD: 1
+  PV: 1
+  OP: 1
+  note: MyText

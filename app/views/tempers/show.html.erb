@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @temper.name %>
+</p>
+
+<p>
+  <strong>Pv:</strong>
+  <%= @temper.PV %>
+</p>
+
+<p>
+  <strong>Op:</strong>
+  <%= @temper.OP %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @temper.note %>
+</p>
+
+<%= link_to 'Edit', edit_temper_path(@temper) %> |
+<%= link_to 'Back', tempers_path %>

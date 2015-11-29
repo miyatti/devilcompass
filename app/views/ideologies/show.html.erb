@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ideology.name %>
+</p>
+
+<p>
+  <strong>A:</strong>
+  <%= @ideology.A %>
+</p>
+
+<p>
+  <strong>B:</strong>
+  <%= @ideology.B %>
+</p>
+
+<p>
+  <strong>C:</strong>
+  <%= @ideology.C %>
+</p>
+
+<p>
+  <strong>D:</strong>
+  <%= @ideology.D %>
+</p>
+<p>
+  <strong>Note:</strong>
+  <%= @ideology.note %>
+</p>
+
+
+<%= link_to 'Edit', edit_ideology_path(@ideology) %> |
+<%= link_to 'Back', ideologies_path %>

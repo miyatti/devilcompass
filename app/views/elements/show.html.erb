@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lc:</strong>
+  <%= @element.LC %>
+</p>
+
+<p>
+  <strong>Ld:</strong>
+  <%= @element.LD %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @element.note %>
+</p>
+
+<%= link_to 'Edit', edit_element_path(@element) %> |
+<%= link_to 'Back', elements_path %>

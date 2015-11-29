@@ -1,0 +1,41 @@
+<%= form_for(@devil) do |f| %>
+  <% if @devil.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@devil.errors.count, "error") %> prohibited this devil from being saved:</h2>
+
+      <ul>
+      <% @devil.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :LC %><br>
+    <%= f.number_field :LC %>
+  </div>
+  <div class="field">
+    <%= f.label :LD %><br>
+    <%= f.number_field :LD %>
+  </div>
+  <div class="field">
+    <%= f.label :PV %><br>
+    <%= f.number_field :PV %>
+  </div>
+  <div class="field">
+    <%= f.label :OP %><br>
+    <%= f.number_field :OP %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br>
+    <%= f.text_area :note %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

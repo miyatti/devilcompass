@@ -1,0 +1,44 @@
+<%= form_for(@survey) do |f| %>
+  <% if @survey.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@survey.errors.count, "error") %> prohibited this survey from being saved:</h2>
+
+      <ul>
+      <% @survey.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<% @questions.each_with_index do |question,i| %>
+  <%= question.name %></br>
+  <div class="field">
+    <%= f.label ("q" + format("%02d",i+1)).to_sym%><br>
+    <%= f.number_field ("q" +format("%02d",i+1)).to_sym %>
+  </div>
+<% end %>
+
+  <div class="field">
+    <%= f.label :A %><br>
+    <%= f.number_field :A %>
+  </div>
+  <div class="field">
+    <%= f.label :B %><br>
+    <%= f.number_field :B %>
+  </div>
+  <div class="field">
+    <%= f.label :C %><br>
+    <%= f.number_field :C %>
+  </div>
+  <div class="field">
+    <%= f.label :D %><br>
+    <%= f.number_field :D %>
+  </div>
+  <div class="field">
+    <%= f.label :result %><br>
+    <%= f.text_field :result %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

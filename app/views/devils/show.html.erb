@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @devil.name %>
+</p>
+
+<p>
+  <strong>Lc:</strong>
+  <%= @devil.LC %>
+</p>
+
+<p>
+  <strong>Ld:</strong>
+  <%= @devil.LD %>
+</p>
+
+<p>
+  <strong>Pv:</strong>
+  <%= @devil.PV %>
+</p>
+
+<p>
+  <strong>Op:</strong>
+  <%= @devil.OP %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @devil.note %>
+</p>
+
+<%= link_to 'Edit', edit_devil_path(@devil) %> |
+<%= link_to 'Back', devils_path %>

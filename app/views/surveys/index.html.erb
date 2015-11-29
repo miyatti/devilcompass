@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Surveys</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Q01</th>
+      <th>Q02</th>
+      <th>Q03</th>
+      <th>Q04</th>
+      <th>Q05</th>
+      <th>Q06</th>
+      <th>Q07</th>
+      <th>Q08</th>
+      <th>Q09</th>
+      <th>Q10</th>
+      <th>Q11</th>
+      <th>Q12</th>
+      <th>Q13</th>
+      <th>Q14</th>
+      <th>Q15</th>
+      <th>Q16</th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+      <th>D</th>
+      <th>Result</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @surveys.each do |survey| %>
+      <tr>
+        <td><%= survey.q01 %></td>
+        <td><%= survey.q02 %></td>
+        <td><%= survey.q03 %></td>
+        <td><%= survey.q04 %></td>
+        <td><%= survey.q05 %></td>
+        <td><%= survey.q06 %></td>
+        <td><%= survey.q07 %></td>
+        <td><%= survey.q08 %></td>
+        <td><%= survey.q09 %></td>
+        <td><%= survey.q10 %></td>
+        <td><%= survey.q11 %></td>
+        <td><%= survey.q12 %></td>
+        <td><%= survey.q13 %></td>
+        <td><%= survey.q14 %></td>
+        <td><%= survey.q15 %></td>
+        <td><%= survey.q16 %></td>
+        <td><%= survey.A %></td>
+        <td><%= survey.B %></td>
+        <td><%= survey.C %></td>
+        <td><%= survey.D %></td>
+        <td><%= survey.result %></td>
+        <td><%= link_to 'Show', survey %></td>
+        <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
+        <td><%= link_to 'Destroy', survey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Survey', new_survey_path %>

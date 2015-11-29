@@ -1,0 +1,75 @@
+<div id="r_title"><%= image_tag('title_small@2x.png', :width => 161)%> </div>
+<div id="r_result1">
+<div id="r_result1_title">
+<p id="r_result1_title1">あなたのイデオロギヰは</p>
+<p id="r_result1_title2"><%=@user.ideology.name%></p>
+<p id="r_result1_title3">( <%=XY(@user.A)%><%=XY(@user.B)%><%=XY(@user.C)%><%=XY(@user.D)%>型 )</p>
+<div id="r_result1_image">
+<%= image_tag(@user.devil.name + '.png', :width => 128) %>
+</div>
+</div>
+<div id="r_result1_subtitle">
+<p id="r_result1_subtitle1">種族は</p>
+<p id="r_result1_subtitle2"><%=@user.devil.name%></p>
+<p id="r_result1_subtitle3">( <%=LD(@user.devil.LD)%> - <%=LC(@user.devil.LC) %> )</p>
+</div>
+</div>
+
+<div id="r_result2">
+<div id="r_result2_title">
+  <%= @user.ideology.name %>とは
+</div>
+<div class="r_result2_contents">
+  <p class="r_result2_contents_title">道徳観</p>
+  <%= render partial:"result_chart", locals: {v:@user.A,y:"慣習型",x:"合理型"} %>
+<p class="r_result2_contents_contents">
+<%= @user.ideology.NoteA %>
+</p>
+</div>
+<div class="r_result2_contents">
+  <p class="r_result2_contents_title">平等観</p>
+  <%= render partial:"result_chart", locals: {v:@user.B,y:"矯正型",x:"原則型"} %>
+<p class="r_result2_contents_contents">
+<%= @user.ideology.NoteB %>
+</p>
+</div>
+<div class="r_result2_contents">
+  <p class="r_result2_contents_title">共同体観</p>
+  <%= render partial:"result_chart", locals: {v:@user.C,y:"人為型",x:"自然型"} %>
+<p class="r_result2_contents_contents">
+<%= @user.ideology.NoteC %>
+</p>
+</div>
+<div class="r_result2_contents">
+  <p class="r_result2_contents_title">自由観</p>
+  <%= render partial:"result_chart", locals: {v:@user.D,y:"個人型",x:"政府型"} %>
+<p class="r_result2_contents_contents">
+<%= @user.ideology.NoteD %>
+</p>
+</div>
+</div>
+
+<div id="r_result3">
+<div id="r_result3_title">
+女神転生的には
+</div>
+<div class="r_result3_subtitle">
+<p class="r_result3_subtitle1">属性は</p>
+<p class="r_result3_subtitle2"><%=LD(@user.devil.LD)%> - <%=LC(@user.devil.LC) %></p>
+</div>
+<div class="r_result3_contents">
+<p class="r_result3_contents_contents">
+<%= @user.element.note %>
+</p>
+</div>
+<div class="r_result3_subtitle">
+<p class="r_result3_subtitle1">性格は</p>
+<p class="r_result3_subtitle2"><%=@user.temper.name%></p>
+</div>
+<div class="r_result3_contents">
+<p class="r_result3_contents_contents">
+<%= @user.temper.note %>
+</p>
+</div>
+</div>
+

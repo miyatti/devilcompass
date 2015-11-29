@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tempers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Pv</th>
+      <th>Op</th>
+      <th>Note</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tempers.each do |temper| %>
+      <tr>
+        <td><%= temper.name %></td>
+        <td><%= temper.PV %></td>
+        <td><%= temper.OP %></td>
+        <td><%= temper.note %></td>
+        <td><%= link_to 'Show', temper %></td>
+        <td><%= link_to 'Edit', edit_temper_path(temper) %></td>
+        <td><%= link_to 'Destroy', temper, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Temper', new_temper_path %>
