@@ -5,7 +5,7 @@ class Devil < ActiveRecord::Base
     if b>= 0 then tb=1 else tb=-1 end
     if c>= 1 then tc=1 elsif c<=-1 then tc=-1 else tc=0  end
     if d>= 1 then td=1 elsif d<=-1 then td=-1 else td=0  end
-    where("LC = ? and LD = ? and PV = ? and OP = ?",-1*tc,td,ta,-1*tb)
+    where("\"LC\" = ? and \"LD\" = ? and \"PV\" = ? and \"OP\" = ?",-1*tc,td,ta,-1*tb)
 
   end
 
