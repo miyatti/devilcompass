@@ -6,7 +6,7 @@
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
   <meta property="og:title" content="あなたの種族は<%=@user.devil.name%>(<%=LD(@user.devil.LD)%>-<%=LC(@user.devil.LC) %>),あなたのイデオロギヰは<%=@user.ideology.name%>です。"/>
   <meta property="og:description" content="<%=@user.element.note%> - 女神転生的イデオロギー診断" >
-  <meta property="og:image" content=<%= "http://devilcompass.herokuapp.com" + asset_path(@user.devil.id + "ogp.png")%> />
+  <meta property="og:image" content=<%= "http://devilcompass.herokuapp.com" + asset_path(@user.devil.id.to_s + "ogp.png")%> />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
