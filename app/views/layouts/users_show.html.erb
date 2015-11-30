@@ -4,9 +4,9 @@
   <title>Shindan</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-  <meta property="og:title" content="あなたの種族は<%=@user.devil.name%>(<%=LD(@user.devil.LD)%>-<%=LC(@user.devil.LC) %>)です。"/>
-  <meta property="og:description" content="あなたのイデオロギヰは<%=@user.ideology.name%>です。 - 女神転生的イデオロギー診断" >
-  <meta property="og:image" content=<%= "http://devilcompass.herokuapp.com" + asset_path(@user.devil.name + "_ogp.png")%> />
+  <meta property="og:title" content="あなたの種族は<%=@user.devil.name%>(<%=LD(@user.devil.LD)%>-<%=LC(@user.devil.LC) %>),あなたのイデオロギヰは<%=@user.ideology.name%>です。"/>
+  <meta property="og:description" content="<%=@user.element.note%> - 女神転生的イデオロギー診断" >
+  <meta property="og:image" content=<%= "http://devilcompass.herokuapp.com" + asset_path(@user.devil.name + "ogp.png")%> />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -25,7 +25,7 @@
 <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '503884506457409',
+      appId      : '224770217580934',
       xfbml      : true,
       version    : 'v2.5'
     });
@@ -39,6 +39,7 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
 <%= yield %>
 
 </body>
