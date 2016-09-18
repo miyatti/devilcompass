@@ -118,4 +118,5 @@ ActiveRecord::Schema.define(version: 20151125222106) do
     t.integer  "devil_id"
   end
 
+  add_foreign_key "answers", "users"
 end
